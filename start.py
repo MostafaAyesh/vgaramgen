@@ -6,7 +6,13 @@ import sys
 import os
 import urllib
 typrint('Checking Latest Versions...')
-import check
+urllib.urlretrieve('https://rawgit.com/MostafaAyesh/vgaramgen/master/ver.txt', 'ver.txt')
+import data
+if data.dver != data.dver_:
+    typrint('Update Found Downloading...')
+    urllib.urlretrieve('https://rawgit.com/MostafaAyesh/vgaramgen/master/data.txt', 'data.txt')
+else:
+    typrint('No Update Found')
 time.sleep(0.5)
 os.system('cls')
 
